@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/dive_cell_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:text="@string/title"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:fontFamily="@font/quicksand_regular"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/dive_cell_delete_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:layout_gravity="center_vertical"
+            android:background="#00dddddd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:text="@string/summary_cell"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#044fb8"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/dive_cell_summary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:text="@string/summary"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#636363"
+            android:fontFamily="@font/quicksand_regular"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom_type_cell"
+            android:layout_weight="35"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#044fb8"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/dive_cell_bottom_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:text="@string/bottom_type"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#636363"
+            android:fontFamily="@font/quicksand_regular"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/salinity_type_cell"
+            android:layout_weight="35"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#044fb8"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/dive_cell_salinity_type"
+            android:layout_width="0dp"
+            android:layout_weight="65"
+            android:layout_height="wrap_content"
+            android:text="@string/salinity_type"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#636363"
+            android:fontFamily="@font/quicksand_regular"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/water_type_cell"
+            android:layout_weight="35"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#044fb8"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/dive_cell_water_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:text="@string/water_type"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#636363"
+            android:fontFamily="@font/quicksand_regular"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/max_depth_cell"
+            android:layout_weight="35"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#044fb8"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/dive_cell_max_depth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:text="@string/max_depth"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#636363"
+            android:fontFamily="@font/quicksand_regular"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

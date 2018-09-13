@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>DiveSites</name>
+    <Style id="icon-1861-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1861-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1861-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1861-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1861-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Dekel Beach Canyon</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          34.9472603,29.5399971,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dolphins Reef</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          34.9364591,29.5260065,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Pyramid</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          34.9274951,29.5145372,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pellowe Reef - Cucumber Alley</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          34.9283534,29.5138369,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Mosquito </name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          34.9272108,29.5121423,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Japanese Gardens - Eilat</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          34.9099052,29.4927106,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Gordon Caves</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          34.7648621,32.0850289,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tzipor Reef</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          34.7587466,32.0902374,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Boat Dive Haifa</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          34.8939514,32.7822234,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Salichan</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -74.1931844,11.3107166,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Salidero - Isla Aguja</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -74.1924763,11.309391,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Parque de Malongane</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -74.19945,11.3183964,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sleeping Sharks Cave</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.7559863,21.2873949,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MUSA (Underwater Museum of Art)</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.7239714,21.2068986,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cross Of The Bay</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.7350006,21.2124598,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Las Amforas</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -77.1144104,21.5904045,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Alta Gracia</name>
+      <styleUrl>#icon-1861-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -77.0493507,21.5876909,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Presquero</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -75.9360838,21.100396,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

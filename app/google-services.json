@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "101997044553",
+    "firebase_url": "https://divein-ae97d.firebaseio.com",
+    "project_id": "divein-ae97d",
+    "storage_bucket": "divein-ae97d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101997044553:android:ea922d2fb38d7404",
+        "android_client_info": {
+          "package_name": "com.example.user.divein"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101997044553-21ode8f7qfc0b9qqguan4t5q1e4obnbe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.divein",
+            "certificate_hash": "846f3efd5f647a748bc74bf186e472d4a7f38105"
+          }
+        },
+        {
+          "client_id": "101997044553-inttjqamt9hurpuvq91jv2u9ksarvqfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXre6xk530O9ofPZcpJ543ZRLm73NoEBE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101997044553-inttjqamt9hurpuvq91jv2u9ksarvqfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

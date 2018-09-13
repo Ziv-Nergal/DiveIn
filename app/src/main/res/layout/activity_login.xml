@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_wallpaper"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/log_in_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/righteous_regular"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:text="@string/dive_in" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <EditText
+            android:id="@+id/reg_user_name_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/reg_edit_text_bg"
+            android:layout_gravity="center"
+            android:hint="@string/email_address"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/reg_password_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reg_edit_text_bg"
+            android:layout_gravity="center"
+            android:hint="@string/password"
+            android:textColorHint="#000"
+            android:textSize="20sp"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/login"
+            android:onClick="LoginBtnClickListener"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register"
+            android:onClick="RegisterBtnClickListener"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

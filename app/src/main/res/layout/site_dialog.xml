@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/location_dialog_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/site_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title"
+            android:textSize="25sp"
+            android:fontFamily="@font/righteous_regular"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/site_dialog_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/description"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+        <RatingBar
+            android:id="@+id/site_dialog_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stepSize="0.1"
+            android:numStars="5" />
+
+        <Spinner
+            android:id="@+id/site_rate_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/rate" />
+
+        <Button
+            android:id="@+id/site_dialog_add_dive_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_new_dive"/>
+
+        <Button
+            android:id="@+id/site_dialog_add_wishlist_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_to_wishlist" />
+
+    </LinearLayout>
+
+</LinearLayout>

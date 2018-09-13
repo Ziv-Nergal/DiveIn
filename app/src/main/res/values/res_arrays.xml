@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="associations_array">
+
+        <item>PADI</item>
+        <item>SSI</item>
+
+    </string-array>
+
+    <string-array name="bottom_type_array">
+
+        <item>Bottom Type...</item>
+        <item>Clay</item>
+        <item>Coral</item>
+        <item>Gravel</item>
+        <item>Mud</item>
+        <item>None/Blue Water</item>
+        <item>Rock/Reef</item>
+        <item>Sand</item>
+        <item>Silt</item>
+        <item>Stone/Bolders</item>
+        <item>Wall</item>
+        <item>Sea Grass</item>
+
+    </string-array>
+
+    <string-array name="salinity_type_array">
+
+        <item>Salinity Type...</item>
+        <item>Brackish Water</item>
+        <item>Fresh Water</item>
+        <item>Salt Water</item>
+
+    </string-array>
+
+    <string-array name="water_type_array">
+
+        <item>Water Type...</item>
+        <item>Caves/Cavern</item>
+        <item>Lagoon</item>
+        <item>Lake/Pond/Quarry</item>
+        <item>Ocean/Sea</item>
+        <item>River/Spring</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="rating_array">
+
+        <item>Rate</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+
+    </string-array>
+
+    <string-array name="padi_licence_type">
+
+        <item>Open Water Diver</item>
+        <item>Advanced Open Water Diver</item>
+        <item>Rescue Diver</item>
+        <item>Master Scuba Diver</item>
+        <item>Divemaster</item>
+        <item>Adventure Diver</item>
+        <item>Cavern Diver</item>
+        <item>Deep Diver</item>
+        <item>Digital Underwater Photographer</item>
+        <item>Drift Diver</item>
+        <item>Ice Diver</item>
+
+    </string-array>
+
+    <string-array name="ssi_licence_type">
+
+        <item>Open Water Diver</item>
+        <item>Advanced Open Water Diver</item>
+        <item>Advanced Adventurer</item>
+        <item>Wreck Diving</item>
+        <item>Rescue Diving</item>
+        <item>Divemaster</item>
+        <item>Drift Diving</item>
+        <item>Deep Diving</item>
+        <item>Cavern Diving</item>
+        <item>Ice Diving</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_wallpaper"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ProgressBar
+        android:id="@+id/profile_progress_bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="@style/AppTheme"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/edit_mode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            tools:context=".ProfileActivity">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/profile_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme"
+                app:titleTextColor="#fff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/righteous_regular"
+                    android:text="@string/user_profile"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/profile_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/blank_profile_pic"
+                    app:civ_border_color="#fff"
+                    app:civ_border_width="2dp" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/ic_menu_camera"
+                    android:onClick="ChangePicBtnClickListener" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="10"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/profile_data_bg"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/profile_user_name_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="@string/user_name"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/profile_user_name_edit_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:background="#00ffffff"
+                        android:importantForAccessibility="no"
+                        android:tag="@string/user_name" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/profile_data_bg"
+                    android:layout_marginBottom="40dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/profile_email_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="@string/email_address"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="@string/personal_details"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/profile_data_bg"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/profile_first_name_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="@string/first_name"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/profile_first_name_edit_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:background="#00ffffff"
+                        android:importantForAccessibility="no"
+                        android:tag="@string/first_name"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/profile_data_bg"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/profile_last_name_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="@string/last_name"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/profile_last_name_edit_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:background="#00ffffff"
+                        android:importantForAccessibility="no"
+                        android:tag="@string/last_name"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/profile_data_bg"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/profile_birthday_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="@string/birthday"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/profile_birthday_edit_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:background="#00ffffff"
+                        android:importantForAccessibility="no"
+                        android:tag="@string/birthday"
+                        android:onClick="BirthdayBtnClickListener"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="@string/licence_details"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/profile_data_bg"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/profile_dive_association_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="@string/dive_association"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/profile_dive_association_edit_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:background="#00ffffff"
+                        android:importantForAccessibility="no"
+                        android:tag="@string/dive_association"
+                        android:onClick="DiveAssociationBtnClickListener"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/profile_data_bg"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/profile_licence_type_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="@string/licence_type"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/profile_licence_type_edit_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:background="#00ffffff"
+                        android:importantForAccessibility="no"
+                        android:tag="@string/licence_type"
+                        android:onClick="LicenceTypeBtnClickListener"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/profile_data_bg"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/profile_licence_id_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="@string/licence_id"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/profile_licence_id_edit_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:background="#00ffffff"
+                        android:importantForAccessibility="no"
+                        android:tag="@string/licence_id" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
